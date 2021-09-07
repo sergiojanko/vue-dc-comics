@@ -75,7 +75,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
     header
     {
@@ -91,12 +91,12 @@ export default {
     ul li
     {
         list-style-type: none;
-        height: 100%;
     }
 
     ul li a 
     {
         text-decoration: none;
+        font-weight:bold;
         color: #000;
         padding: 10px;;
         line-height: 100%;

@@ -1,5 +1,7 @@
 <template>
-  <section></section>
+  <section id="footer-top">
+    
+  </section>
 </template>
 
 <script>

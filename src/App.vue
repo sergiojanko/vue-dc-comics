@@ -33,6 +33,7 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 .container
 {
@@ -48,5 +49,22 @@ export default {
 .container .row .col
 {
   height: 100%;
+}
+
+ul
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+ul li
+{
+    list-style-type: none;
+}
+
+ul li a 
+{
+    text-decoration: none;
 }
 </style>
