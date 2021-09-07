@@ -28,12 +28,25 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container
+{
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.container .row
+{
+  display: flex;
+  height: 100%;
+}
+
+.container .row .col
+{
+  height: 100%;
 }
 </style>

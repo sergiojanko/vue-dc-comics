@@ -75,6 +75,35 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+    header
+    {
+        height: 150px;
+    }
+    ul
+    {
+        display: flex;
+        height: 100%;
+        margin: 50px 0;
+
+    }
+    ul li
+    {
+        list-style-type: none;
+        height: 100%;
+    }
+
+    ul li a 
+    {
+        text-decoration: none;
+        color: #000;
+        padding: 10px;;
+        line-height: 100%;
+    }
+
+    .row
+    {
+        justify-content: space-between;
+    }
 </style>
