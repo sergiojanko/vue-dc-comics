@@ -3,7 +3,8 @@
     <ul>
       <li v-for="item in items" :key="item.text">
         <a href="#">
-          <img :src="getImageUrl(item.image)" :alt="item.text">
+          <img :src="getImageUrl(item.image)" alt="">
+          <p>{{icon.text}}</p>
         </a>
       </li>
     </ul>
@@ -17,23 +18,23 @@ export default {
       return {
         items: [
           {
-            image: "../assets/img/buy-comics-digital-comics.png",
+            image: "buy-comics-digital-comics.png",
             text: "digital comics"
           },
           {
-            image: "../assets/img/buy-comics-digital-merchandise.png",
+            image: "buy-comics-digital-merchandise.png",
             text: "dc merchandise"
           },
           {
-            image: "../assets/img/buy-comics-digital-shop-locator.png",
+            image: "buy-comics-digital-shop-locator.png",
             text: "subscription"
           },
           {
-            image: "../assets/img/buy-comics-digital-subscriptions.png",
+            image: "buy-comics-digital-subscriptions.png",
             text: "comic shop locator"
           },
           {
-            image: "../assets/img/buy-dc-power-visa.svg",
+            image: "buy-dc-power-visa.svg",
             text: "dc power visa"
           },
         ],
@@ -41,8 +42,8 @@ export default {
     },
     methods: {
       getImageUrl(img){
-        return require(img)
-      }
+        return require("@/assets/img/" + img);
+      },
     }
 };
 </script>
